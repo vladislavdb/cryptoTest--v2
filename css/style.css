@@ -1,0 +1,450 @@
+body {
+  margin: 0;
+  font-family: 'Vollkorn', serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #282828;
+  background-color: #FFFFFF;
+}
+
+.main-content
+{
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 220px;
+}
+
+.crypto-exchange input:focus
+{
+  outline: none;
+}
+
+.crypto-exchange label
+{
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.crypto-exchange h1
+{
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  padding-top: 220px;
+
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 300;
+}
+.crypto-exchange p
+{
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.exchange-1row
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.input-select
+{
+  position: relative;
+}
+
+.input-select::after
+{
+  position: absolute;
+  content: "";
+  border: 1px solid #E3EBEF;
+  transform: rotate(90deg);
+  width: 30px;
+  height: 0px;
+  left: 275px;
+  top: 25px;
+  pointer-events: none;
+}
+.hide-after:after {
+  display: none;
+}
+
+.select-1
+{
+  position: absolute; 
+
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  height: 52px;
+  width: 152px;
+  top: 0;
+  right: 0;
+
+  cursor: pointer;
+} 
+
+.select1-icon
+{
+  height: 20px;
+  width: 20px;
+  pointer-events: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 34px;
+  display: block;
+}
+.select1-icon--hidden
+{
+  display: none;
+}
+.select-1-text
+{
+
+  pointer-events: none;
+  padding-top: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+}
+.select-1-text--hidden
+{
+  display: none;
+}
+
+.input-1
+{
+  padding: 0;
+  padding-left: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  font-family: 'Vollkorn', serif;
+
+  width: 424px;
+  height: 50px;
+  background: #F6F7F8;
+  border: 1px solid #E3EBEF;
+  border-radius: 5px;
+}
+.input-1--active
+{
+  border: 1px solid #C1D9E6;
+  border-radius: 5px 5px 0 0;
+  border-bottom: none;
+}
+.galka
+{
+  position: absolute; 
+  height: 0;
+  width: 0;
+  top: 15px;
+  right: 22px; 
+  pointer-events: none;
+  
+}
+.galka--hide
+{
+  display: none;
+}
+.krestik
+{
+  display: none;
+
+  position: absolute; 
+  height: 0;
+  width: 0;
+  top: 19px;
+  right: 23px; 
+  
+  cursor: pointer; 
+  z-index: 1;
+}
+.krestik--display
+{
+  display: block;
+}
+.dropdown-list {
+  display: none;
+
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  
+  height: 142px;
+  width: 440px;
+  border-radius: 5px;
+  overflow-y: scroll;
+
+  background: #F6F7F8;
+  border: 1px solid #C1D9E6;
+  border-top: 1px solid #E3EBEF;
+  border-radius: 0 0 5px 5px;
+
+  z-index: 1;
+}
+.dropdown-list--visible
+{
+  display: block;
+  
+}
+.dropdown-list-item {
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  padding-top: 13px;
+  padding-left: 17px;
+  padding-bottom: 11px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+
+cursor: pointer; 
+}
+ .dropdown-list-item:first-child {
+  
+  padding-top: 14px;
+
+}
+.dropdown-list-item:last-child {
+  
+  padding-bottom: 10px;
+
+} 
+.dropdown-list-item:hover {
+  background: #EAF1F7;
+}
+
+.dropdown-list-item-icon
+{
+  width: 20px;
+  height: 20px;
+}
+.dropdown-list-item-description
+{
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #80A2B6;
+
+  left: 97px;
+}
+
+.dropdown-input-hidden {
+  display: none;
+  position: absolute;
+  left: 0;
+  
+
+  
+  background: #F6F7F8;
+  border: 1px solid #C1D9E6;
+  border-radius: 5px 5px 0 0;
+  border-bottom: none;
+  
+
+  width: 422px;
+  height: 50px;
+  padding-left: 16px;
+  color: #282828;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  font-family: 'Vollkorn', serif;
+
+  
+}
+.dropdown-input-hidden::placeholder
+{
+  color: #80A2B6;
+}
+.dropdown-input-hidden--open {
+  display: inline;
+}
+.swap-input-select
+{
+  cursor: pointer;
+}
+.swap-input-select--hidden
+{
+  display: none;
+}
+.loading
+{
+  display: none;
+}
+.loading--active
+{
+  display: block;
+}
+
+
+
+.crypto-exchange button
+{
+  position: relative;
+
+  background: #11B3FE;
+  border-radius: 5px;
+  border: none;
+  width: 205px;
+  height: 50px;
+  cursor: pointer;
+}
+.crypto-exchange button:hover
+{
+  background: #0095E0;
+}
+.crypto-exchange button span
+{
+  
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Vollkorn', serif;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+button .button__error--hidden
+{
+   display: none;
+   margin: 0;
+   padding: 0;
+   font-family: 'Vollkorn', serif;
+   color: #E03F3F;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 23px;
+
+   position: absolute;
+   top: 58px;
+   left: 15px;
+
+   pointer-events: none;
+}
+button .button__error--active
+{
+   display: block;
+}
+.button__error--active::before
+{
+   content: "";
+   border: 1px solid #a5b9c4;
+   width: 230px;
+   height: 0px;
+   pointer-events: none;
+   position: absolute;
+   top: -148px;
+   left: -225px;
+   display: block;
+}
+
+.exchange-2row
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.crypto-exchange .input-3
+{
+  padding: 0;
+
+  width: 723px;
+  height: 50px;
+  background: #F6F7F8;
+  border: 1px solid #E3EBEF;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+  --scrollbarBG: #CFD8DC;
+  --thumbBG: #90A4AE;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+.dropdown-list {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 1px solid var(--scrollbarBG);
+}
+
+
+
+
+
+ 
+ /* * { outline: 2px dotted red; }
+* * { outline: 2px dotted green; }
+* * * { outline: 2px dotted orange; }
+* * * * { outline: 2px dotted blue; }
+* * * * * { outline: 1px solid red; }
+* * * * * * { outline: 1px solid green; }
+* * * * * * * { outline: 1px solid orange; }
+* * * * * * * * { outline: 1px solid blue; }        */
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+
+:focus::-webkit-input-placeholder {
+  color: transparent
+}
+
+:focus::-moz-placeholder {
+  color: transparent
+}
+
+:focus:-moz-placeholder {
+  color: transparent
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent
+}

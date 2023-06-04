@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+    <title>Crypto Exchange</title>
+  </head>
+  <body class="page">
+    <main class="main-content">
+      <section class="crypto-exchange">
+       <h1>Crypto Exchange</h1>
+       <p>Exchange fast and easy</p>
+       <!-- <form class="exchange">  -->
+        <div class="exchange-1row">
+
+          <div class="input-select">
+            <input class="input-1" type="number" maxlength="27" value="">
+            <div class="select-1"><img class="select1-icon" src=""><div class="select-1-text"></div></div>
+            <a class="galka" href=""><img src="img\Vector.svg" alt=""></a>
+            <a class="krestik" ><img src="img\Vector (1).svg" alt=""></a>
+            <ul class="dropdown-list">
+              
+            </ul>
+            <input type="text" placeholder="Search" value="" maxlength="25" class="dropdown-input-hidden">
+          </div>
+          
+          <a class="swap-input-select"><img src="img\swap.svg" width="24px" height="24px"></a>
+          <a class="loading"><img src="img\ZKZx.gif" width="24px" height="24px"></a>
+
+          <div class="input-select">
+            <input class="input-1" type="number" maxlength="27"  disabled value="">
+            <div class="select-1"><img class="select1-icon" src=""><div class="select-1-text"></div></div>
+            <a class="galka" href=""><img src="img\Vector.svg" alt=""></a>
+            <a class="krestik" ><img src="img\Vector (1).svg" alt=""></a>
+            <ul class="dropdown-list">
+              
+            </ul>
+            <input type="text" placeholder="Search" value="" maxlength="25" class="dropdown-input-hidden">
+          </div>
+
+        </div>
+        
+        <label>Your Ethereum address</label>
+        <div class="exchange-2row">
+          <input class="input-3">
+          <button><p class="button__error--hidden">This pair is disabled now</p><span>Exchange</span></button>
+        </div>
+       <!-- </form> -->
+      </section>
+      
+    </main>
+    <script src="dropbox.js"></script>
+    <script src="fetch_swap.js"></script>
+    <script src="fetch_defaultAmounts.js"></script>
+    <script src="dropboxValueSearch.js"></script>
+    <script src="fetch_oninput.js"></script>
+  </body>
+</html>
